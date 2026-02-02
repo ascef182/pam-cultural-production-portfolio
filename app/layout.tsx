@@ -14,25 +14,32 @@ const _sourceSans = Source_Sans_3({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL('https://pamascef.com.br'),
   title: 'Pâm Ascef Cazarini — Produtora Cultural & Tradutora Audiovisual',
   description: 'Produção cultural, coordenação de festivais de cinema, teatro e circo. Tradução e legendagem audiovisual para cinema e artes cênicas.',
-  generator: 'v0.app',
   icons: {
-    icon: [
+    icon: '/fotos/PamAscef.jpeg',
+    apple: '/fotos/PamAscef.jpeg',
+  },
+  openGraph: {
+    title: 'Pâm Ascef Cazarini',
+    description: 'Produtora Cultural & Tradutora Audiovisual. Quatro anos de experiência em festivais de cinema, teatro e circo no Brasil.',
+    images: [
       {
-        url: '/icon-light-32x32.png',
-        media: '(prefers-color-scheme: light)',
-      },
-      {
-        url: '/icon-dark-32x32.png',
-        media: '(prefers-color-scheme: dark)',
-      },
-      {
-        url: '/icon.svg',
-        type: 'image/svg+xml',
+        url: '/fotos/PamAscef.jpeg',
+        width: 800,
+        height: 800,
+        alt: 'Pâm Ascef Cazarini - Produtora Cultural',
       },
     ],
-    apple: '/apple-icon.png',
+    locale: 'pt_BR',
+    type: 'website',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Pâm Ascef Cazarini — Produtora Cultural',
+    description: 'Produção cultural e tradução audiovisual para festivais de cinema, teatro e circo.',
+    images: ['/fotos/PamAscef.jpeg'],
   },
 }
 
@@ -42,7 +49,7 @@ export default function RootLayout({
   children: React.ReactNode
 }>) {
   return (
-    <html lang="en">
+    <html lang="pt-BR">
       <body className={`${_playfair.variable} ${_sourceSans.variable} font-sans antialiased`}>
         {children}
         <Analytics />

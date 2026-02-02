@@ -38,7 +38,7 @@ export function HeroSection() {
               {/* Photo container with border */}
               <div className="relative w-full h-full rounded-full overflow-hidden border-2 border-primary/30 shadow-2xl shadow-primary/10">
                 <Image
-                  src="/fotos/PâmAscef.jpeg"
+                  src="/fotos/PamAscef.jpeg"
                   alt="Pâm Ascef Cazarini - Produtora Cultural e Tradutora Audiovisual"
                   fill
                   className="object-cover grayscale hover:grayscale-0 transition-all duration-700"

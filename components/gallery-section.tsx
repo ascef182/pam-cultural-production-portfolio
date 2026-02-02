@@ -3,7 +3,7 @@
 import { motion } from "framer-motion";
 import { useInView } from "framer-motion";
 import { useRef, useState } from "react";
-import { Dialog, DialogContent } from "@/components/ui/dialog";
+import { Dialog, DialogContent, DialogTitle } from "@/components/ui/dialog";
 import { X, ChevronLeft, ChevronRight } from "lucide-react";
 
 const galleryImages = [
@@ -222,7 +222,8 @@ export function GallerySection() {
         open={selectedImage !== null}
         onOpenChange={() => setSelectedImage(null)}
       >
-        <DialogContent className="max-w-5xl p-0 bg-background border-border">
+        <DialogContent className="max-w-5xl p-0 bg-background border-border" showCloseButton={false}>
+          <DialogTitle className="sr-only">Visualização de imagem da galeria</DialogTitle>
           <button
             type="button"
             onClick={() => setSelectedImage(null)}
