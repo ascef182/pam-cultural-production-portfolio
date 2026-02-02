@@ -11,7 +11,7 @@ export function BioSection() {
   return (
     <section
       ref={ref}
-      className="py-32 lg:py-40 bg-card relative overflow-hidden"
+      className="py-16 lg:py-24 bg-card relative overflow-hidden"
     >
       {/* Subtle grid */}
       <div
@@ -82,7 +82,7 @@ export function BioSection() {
             initial={{ opacity: 0 }}
             animate={isInView ? { opacity: 1 } : {}}
             transition={{ duration: 0.6, delay: 0.5 }}
-            className="mt-20 pt-12 border-t border-border"
+            className="mt-12 pt-8 border-t border-border"
           >
             <div className="flex flex-wrap gap-6 text-sm">
               {[
